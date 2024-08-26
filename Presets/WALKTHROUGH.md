@@ -79,7 +79,7 @@ This section will teach you how to create a cone element. For this particular se
 
 ![lines](/docs/images/walkthrough/ifritlines.gif)
 
-[Bossmod](https://github.com/awgil/ffxiv_bossmod/blob/b86d8927452fb6481141f811e93270e4d0c3f714/BossMod/Modules/RealmReborn/Extreme/Ex4Ifrit/Ex4IfritEnums.cs) lists Crimson Cyclone as a skill with a 3.0s cast, range 44 with 6 radius. These values are useful to help us know how long and wide we need to make our element. The fact it has a cast time means we can enable the draw to show the second Ifrit begins casting the skill, giving us plenty of time to see the safe spots.
+Looking at the cast bar, Crimson Cyclone has a cast time of about 3 seconds and the skill moves ifrit along the whole map, so the length is quite long. The width of the skill also looks to be about the size of Ifrits body. You can see that The fact it has a cast time means we can enable the draw to show the second Ifrit begins casting the skill, giving us plenty of time to see the safe spots.
 <ul>
   <li>
     
@@ -101,7 +101,7 @@ Step 3: While casting and Skill ID
 <li>
 
 Step 4: Setting the width and length of the element
- - We know that the element has a range of 44 and a radius of 6. Sometimes we know that because of bossmod and other times, particularly in new fights, we have to do some trial and error testing. We want to make sure that we have accounted for rotation by ticking the "account for rotation" box, which can be found under the element type box.
+ - We know that the element has a long range, making it as long as the map puts it at 44. Making it as wide as Ifrit's body makes the radius 6. Particularly in new fights, we have to do some trial and error testing and gathering IDs of skills and NPCs from splatoon's logging feature, which is explained above.
 ![account for rotation](/docs/images/walkthrough/accountrotate.png)
  - We then want to make Point A have Y:44 (the length) and change the radius to be 6.
 ![yandradius](/docs/images/walkthrough/yandradius.png)
